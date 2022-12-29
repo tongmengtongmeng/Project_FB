@@ -315,7 +315,7 @@
   height: 100%;
   background-color: #f0f2f5;
   position: relative;
-  right: 0;
+  right: 10px;
 }
 .body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__sponsor .sponsor__title {
   height: 10%;
@@ -376,4 +376,84 @@
 .body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__sponsor .sponsor__content .allsponsor:hover .sponsor__dots i {
   font-size: 20px;
   padding: 10px;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__friend_request .friend_request__title {
+  height: 10%;
+  padding: 10px 10px 25px;
+  font-size: 20px;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__friend_request .friend_card {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__friend_request .friend_card .friend_card__img {
+  width: 25%;
+  height: 100%;
+  padding: 10px;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__friend_request .friend_card .friend_card__img img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__friend_request .friend_card .firend_card__content {
+  width: 74%;
+  height: 100%;
+  position: relative;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__friend_request .friend_card .firend_card__content .other_friends {
+  display: flex;
+  position: relative;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__friend_request .friend_card .firend_card__content .other_friends .other_friends__img img {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  left: 0;
+  top: 5px;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__friend_request .friend_card .firend_card__content .other_friends .other_friends__img .img1 {
+  left: 0px;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__friend_request .friend_card .firend_card__content .other_friends .other_friends__img .img2 {
+  left: 10px;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__friend_request .friend_card .firend_card__content .other_friends .other_friends__img .img3 {
+  left: 25px;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__friend_request .friend_card .firend_card__content .other_friends .other_friend_number {
+  width: 50%;
+  height: 10%;
+  position: absolute;
+  right: 25%;
+  top: 10px;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__friend_request .friend_card .firend_card__content .button {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__friend_request .friend_card .firend_card__content .button .btn__conform {
+  width: 49%;
+  height: 100%;
+  background-color: rgb(21, 124, 214);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__friend_request .friend_card .firend_card__content .button .btn__delete {
+  width: 49%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #d7d8db;
+  text-align: center;
+  font-size: 18px;
 }/*# sourceMappingURL=home_style.css.map */

@@ -426,8 +426,8 @@
             height: 100%;
             background-color: #f0f2f5;
             position: relative;
-            right: 0;
-            
+            right: 10px;
+            // sidebar sponsor
             .sidebar__right__sponsor{
                 .sponsor__title{
                     height: 10%;
@@ -505,6 +505,129 @@
 
                 }
             }
+
+            // sidebar friend request
+            .sidebar__right__friend_request{
+                .friend_request__title{
+                    height: 10%;
+                    padding: 10px 10px 25px;
+                    font-size: 20px;
+
+                    h3{
+
+                    }
+                }
+                .friend_card{
+                    height: 100px;
+                    
+                    
+                    display: flex;
+                    // align-items: center;
+                    justify-content: space-between;
+
+                    .friend_card__img{
+                        width: 25%;
+                        height: 100%;
+                        padding: 10px;
+                            img{
+                                height: 60px;
+                                width: 60px;
+                                border-radius: 50%;
+
+                            }
+                        }
+                    .firend_card__content{
+                        width: 74%;
+                        height: 100%;
+                        position: relative;
+                        .friend_name{
+                            
+                        }
+                        .other_friends{
+                            display: flex;
+                            position:relative;
+
+                            .other_friends__img{
+                                
+                                img{
+                                    position:absolute;
+
+                                    height: 30px;
+                                    width: 30px;
+                                    border-radius: 50%;
+                                    left: 0;
+                                    top: 5px;
+                                }
+                                .img1{
+
+                                    left: 0px;
+                                }
+                                .img2{
+
+                                    left: 10px;
+                                }
+                                .img3{
+                                    
+                                    left: 25px;
+                                }
+
+                            }
+                            .other_friend_number{
+                                width: 50%;
+                                height: 10%;
+                                position:absolute;
+                                right: 25%;
+                                top: 10px;
+
+
+                                
+
+
+                            }
+                        }
+                        .button{
+                            width: 100%;
+                            height: 40px;
+                            position: absolute;
+                            top: 60px;
+                            
+                            display: flex;
+                            justify-content: space-between;
+
+
+                            .btn__conform{
+                                width: 49%;
+                                height: 100%;
+                                background-color: rgb(21, 124, 214);
+                                border-radius: 10px;
+                                padding: 10px;
+                                text-align: center;
+                                font-size: 18px;
+                                color: white;
+
+
+                            }
+                            .btn__delete{
+                                width: 49%;
+                                height: 100%;
+                                
+                                border-radius: 10px;
+                                padding: 10px;
+                                background-color: #d7d8db;
+
+                                text-align: center;
+                                font-size: 18px;
+
+
+
+                            }
+                        }
+                    }
+                    
+                }
+
+            }
+
             
         }
     }
