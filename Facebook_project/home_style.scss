@@ -1,0 +1,514 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// header
+.header{
+    max-width: 100%;
+    background-color: white;
+    box-shadow: 0 0 8px gray;
+    position:sticky;
+    top: 0;
+    z-index: 10;
+    
+
+    // header container
+    .header_container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5px;
+
+        // box left
+        .header_box_left{
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            // box logo&search
+            .header_box_left--logo{
+                padding: 5px;
+                cursor: pointer;
+                // logo
+                img{
+                    width: 40px;
+                }
+            }
+            // search box
+            .header_box_left--search{
+                width: 90%;
+
+                padding: 10px 5px;
+
+                .header_searh_box{
+                    width: 100%;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    // search icon
+                    i{
+                        position: absolute;
+                        z-index: 2;
+                        left: 3px;
+                        font-size: 25px;
+                        color: gray;
+
+                    }
+                    //search
+                    input{
+                        position: absolute;
+                        z-index: 1;
+                        width: 100%;
+                        height: 40px;
+                        background-color: #f0f2f5;
+                        color: gray;
+                        font-size: 15px;
+                        outline: none;
+                        padding-left:30px ;
+                        border-radius: 30px;
+                        border: none;
+
+                    }
+                }
+            }
+        }
+        // box center
+        .header_box_center{
+            width: 30% ;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            // home icon
+            .header_center--home{
+
+            }
+            // display icon
+            .header_center--display{              
+            }
+            // shop icon
+            .header-center--shop{
+
+            }
+            // group icon
+            .header-center--group{                       
+            }
+            // all icon
+            i{
+                position:absolute;
+                top: 18%;
+                right: 32%;
+                font-size: 30px;
+                color: gray;
+            }
+            
+            // all box icon hover
+            .hover{
+                width: 100px;
+                height: 50px;
+                position: relative;
+                transition: 0.5s;
+                .header__icon--name{
+                    display: none;
+                }
+                
+            }
+            :hover{
+                background-color: #f0f2f5;
+                border-radius: 20px;
+                transition: 0.3s;
+
+                a{
+                    text-decoration: none;
+                    .header__icon--name{
+                        position:absolute;
+                        bottom: -35px;
+                        right: 20px;
+                        border-radius: 10px;
+                        display: block;
+                        
+                        p{
+                            font-size: 18px;
+                            color: white;
+                            padding: 5px;
+                            background-color: rgba(0, 0, 0, 0.708);
+                            border-radius: 10px;
+                        }
+                    }
+                }
+                
+                
+            }
+            .active{
+                a{
+                    i{
+                        color:  rgb(48, 48, 228);
+
+                    }
+                }
+            }
+            
+        }
+
+        // box right
+        .header_box_right{
+            width: 15% ;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            
+            // all icon
+            i{
+                position:absolute;
+                top: 18%;
+                right: 0;
+                font-size: 25px;
+                color: black;
+                background-color: #f0f2f5;
+                border-radius: 50%;
+                padding: 8px 10px;
+            }
+            
+            // all box icon hover
+            .hover{
+                width: 50px;
+                height: 50px;
+                position: relative;
+                transition: 0.5s;
+                a{
+                    img{
+                        width: 36px;
+                        position:absolute;
+                        top: 18%;
+                        right: 0;
+                        border-radius: 50%;
+                    }
+                    .header__icon--name{
+                        display: none;
+                    }
+                    .counter{
+                        position: absolute;
+                        background-color: red;
+                        border-radius: 50%;
+                        top: -10%;
+                        right: 0;
+                        p{
+                            color: white;
+                            padding: 5px 9px;
+                            border-radius: 50%;
+                            font-size: 13px;
+                            font-weight: 900;
+                        }
+                    }
+                }
+                
+
+                
+            }
+            :hover{
+                transition: 0.3s;
+
+                i{
+                    background-color: #dbddde;
+                }
+
+                a{
+                    text-decoration: none;
+                    .header__icon--name{
+                        position:absolute;
+                        bottom: -35px;
+                        right: 0px;
+                        border-radius: 10px;
+                        display: block;
+                        
+                        p{
+                            font-size: 18px;
+                            color: white;
+                            padding: 5px;
+                            background-color: rgba(0, 0, 0, 0.708);
+                            border-radius: 10px;
+                        }
+                    }
+                }
+                
+                
+            }
+
+            
+        }
+    }
+}
+// content body
+.body__content{
+
+    width: 100%;
+    height: 750px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+
+    
+    // sidebar left
+    .sidebar__scroll__left{
+        width: 30%;
+        height: 100%;
+        visibility: hidden;
+
+        // create scroll bar
+        ::-webkit-scrollbar{
+            width: 8px;
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: rgb(165, 165, 165);
+            border-radius: 10px;
+        }
+        // sidebar
+        .body__content__sidebar__left{
+            width: 100%;
+            max-width: 360px;
+            height: 100%;
+            background-color: #f0f2f5;
+            position: relative;
+
+            // create scroll bar
+            overflow: auto;
+            &:hover{
+                visibility: visible;
+            }
+            
+            // options
+            .sidebar__left__options{
+                visibility: visible;
+
+                background-color: #f0f2f5;
+
+                width: 100%;
+                padding: 15px 0 15px 10px;
+                // all sidebar options
+                .allsidebar{
+                    max-width: 345px;
+                    height: 50px;
+                    padding: 30px 10px;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    // all icons
+                    .icon{
+                        width: 15%;
+                        img{
+                            width: 36px;
+                            border-radius: 50%;
+                        }
+                        
+                    }
+                    // see more icon
+                    i{
+                        font-size: 30px;
+                        padding: 5px;
+                        background-color: #f0f2f5;
+                        border-radius: 50%;
+                    }
+                    // icon name
+                    .name{
+                        font-size:15px;
+                        font-weight: 500;
+                        font:bold;
+                    }
+
+                }
+                // hover on options
+                :hover{
+                    background-color: rgb(213, 209, 209);
+                    border-radius: 10px;
+                }
+            }
+
+            //  shortcuts
+            .sidebar__left__shortcuts{
+                visibility: visible;
+                background-color: #f0f2f5;
+
+
+                width: 100%;
+                padding: 15px 0 15px 10px;
+                &:hover{
+                    .edit{
+                        display: block;
+                        padding-right: 10px;
+                    }
+                }
+                    
+                // all game icons
+                .allgames{
+                    max-width: 345px;
+                    height: 50px;
+                    padding: 30px 10px;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    // icon
+                    .icon{
+                        width: 15%;
+                        // icon image
+                        img{
+                            width: 36px;
+                        }
+                        
+                    }
+                    // icon name 
+                    .name{
+                        font-size:15px;
+                        font-weight: 500;
+                        font:bold;
+                    }
+
+                }
+                // 
+                .allgames:hover{
+                    background-color: rgb(213, 209, 209);
+                    border-radius: 10px;
+                    
+                }
+                //title
+                .sidebar__shortcuts__title{
+
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    h3{
+                        
+                    }
+                    a{
+                        display: none;
+                        text-decoration: none;
+                    }
+                    
+                }:hover{
+                    background-color: none;
+                }
+
+            }
+            // privacy
+            .sidebar__privacy__security__term__conditions{
+
+                visibility: visible;
+                background-color: #f0f2f5;
+                padding: 15px 0 100px 10px;
+                a,span{
+                    color: rgb(140, 138, 138); 
+                    text-decoration: none;
+                }
+            }
+            
+            
+
+
+        }
+    }
+
+    // sidebar right
+    .sidebar__scroll__right{
+        width: 100%;
+        max-width: 360px;
+        height: 100%;
+        
+        .body__content__sidebar__right{
+            width: 100%;
+            max-width: 360px;
+            height: 100%;
+            background-color: #f0f2f5;
+            position: relative;
+            right: 0;
+            
+            .sidebar__right__sponsor{
+                .sponsor__title{
+                    height: 10%;
+                    padding: 20px 10px 10px 25px;
+                    font-size: 20px;
+
+                }
+                .sponsor__content{
+                    height: 80%;
+                    .allsponsor{
+                        padding: 10px 10px;
+                        display: flex;
+                        flex-direction: column;
+
+                        a{
+                            text-decoration: none;
+                            display: flex;
+                            align-items: center;
+                            padding: 0;
+                            .sponsor__image{
+                                width: 130px;                                
+                                height: 130px;                                
+                                border-radius: 10px;
+                                img{
+                                    border-radius: 10px;
+                                    width:100% ;
+                                    height: 100%;
+                                }
+                            }
+                            .sponsor__name{
+                                width: 60%;
+                                padding: 10px;
+                                color: rgb(140, 138, 138); 
+                                .name{
+                                    color: black;
+                                    font-size: 15px;
+                                    font-weight: bold;
+                                    letter-spacing: 2px;
+                                    
+                                }
+                                .online__address{
+    
+                                }
+    
+                            }
+                            .sponsor__dots{
+                                display: none;
+                            }
+                        }
+                        &:hover{
+                            background-color: #e2e2e4;
+                            border-radius: 10px;
+                            position: relative;
+                            .sponsor__dots{
+                                display: block;
+                                border-radius: 50%;
+                                background-color: white;
+                                position: absolute;
+                                top: 5px;
+                                right: 20px;
+            
+                                i{
+                                    font-size: 20px;
+                                    padding: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                .content__sponsor1{
+
+                }
+                .content__sponsor2{
+
+                }
+            }
+            
+        }
+    }
+        
+}
+
+
