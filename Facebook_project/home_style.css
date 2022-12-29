@@ -182,7 +182,7 @@
   border-radius: 10px;
 }
 
-.body__content {
+.body__content__home {
   width: 100%;
   height: 750px;
   display: flex;
@@ -191,19 +191,19 @@
   position: fixed;
   left: 0;
 }
-.body__content .sidebar__scroll__left {
+.body__content__home .sidebar__scroll__left {
   width: 30%;
   height: 100%;
   visibility: hidden;
 }
-.body__content .sidebar__scroll__left ::-webkit-scrollbar {
+.body__content__home .sidebar__scroll__left ::-webkit-scrollbar {
   width: 8px;
 }
-.body__content .sidebar__scroll__left ::-webkit-scrollbar-thumb {
+.body__content__home .sidebar__scroll__left ::-webkit-scrollbar-thumb {
   background-color: rgb(165, 165, 165);
   border-radius: 10px;
 }
-.body__content .sidebar__scroll__left .body__content__sidebar__left {
+.body__content__home .sidebar__scroll__left .body__content__sidebar__left {
   width: 100%;
   max-width: 360px;
   height: 100%;
@@ -211,16 +211,16 @@
   position: relative;
   overflow: auto;
 }
-.body__content .sidebar__scroll__left .body__content__sidebar__left:hover {
+.body__content__home .sidebar__scroll__left .body__content__sidebar__left:hover {
   visibility: visible;
 }
-.body__content .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__options {
+.body__content__home .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__options {
   visibility: visible;
   background-color: #f0f2f5;
   width: 100%;
   padding: 15px 0 15px 10px;
 }
-.body__content .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__options .allsidebar {
+.body__content__home .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__options .allsidebar {
   max-width: 345px;
   height: 50px;
   padding: 30px 10px;
@@ -228,39 +228,39 @@
   align-items: center;
   cursor: pointer;
 }
-.body__content .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__options .allsidebar .icon {
+.body__content__home .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__options .allsidebar .icon {
   width: 15%;
 }
-.body__content .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__options .allsidebar .icon img {
+.body__content__home .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__options .allsidebar .icon img {
   width: 36px;
   border-radius: 50%;
 }
-.body__content .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__options .allsidebar i {
+.body__content__home .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__options .allsidebar i {
   font-size: 30px;
   padding: 5px;
   background-color: #f0f2f5;
   border-radius: 50%;
 }
-.body__content .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__options .allsidebar .name {
+.body__content__home .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__options .allsidebar .name {
   font-size: 15px;
   font-weight: 500;
   font: bold;
 }
-.body__content .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__options :hover {
+.body__content__home .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__options :hover {
   background-color: rgb(213, 209, 209);
   border-radius: 10px;
 }
-.body__content .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__shortcuts {
+.body__content__home .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__shortcuts {
   visibility: visible;
   background-color: #f0f2f5;
   width: 100%;
   padding: 15px 0 15px 10px;
 }
-.body__content .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__shortcuts:hover .edit {
+.body__content__home .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__shortcuts:hover .edit {
   display: block;
   padding-right: 10px;
 }
-.body__content .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__shortcuts .allgames {
+.body__content__home .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__shortcuts .allgames {
   max-width: 345px;
   height: 50px;
   padding: 30px 10px;
@@ -268,48 +268,48 @@
   align-items: center;
   cursor: pointer;
 }
-.body__content .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__shortcuts .allgames .icon {
+.body__content__home .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__shortcuts .allgames .icon {
   width: 15%;
 }
-.body__content .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__shortcuts .allgames .icon img {
+.body__content__home .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__shortcuts .allgames .icon img {
   width: 36px;
 }
-.body__content .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__shortcuts .allgames .name {
+.body__content__home .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__shortcuts .allgames .name {
   font-size: 15px;
   font-weight: 500;
   font: bold;
 }
-.body__content .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__shortcuts .allgames:hover {
+.body__content__home .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__shortcuts .allgames:hover {
   background-color: rgb(213, 209, 209);
   border-radius: 10px;
 }
-.body__content .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__shortcuts .sidebar__shortcuts__title {
+.body__content__home .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__shortcuts .sidebar__shortcuts__title {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.body__content .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__shortcuts .sidebar__shortcuts__title a {
+.body__content__home .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__shortcuts .sidebar__shortcuts__title a {
   display: none;
   text-decoration: none;
 }
-.body__content .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__shortcuts :hover {
+.body__content__home .sidebar__scroll__left .body__content__sidebar__left .sidebar__left__shortcuts :hover {
   background-color: none;
 }
-.body__content .sidebar__scroll__left .body__content__sidebar__left .sidebar__privacy__security__term__conditions {
+.body__content__home .sidebar__scroll__left .body__content__sidebar__left .sidebar__privacy__security__term__conditions {
   visibility: visible;
   background-color: #f0f2f5;
   padding: 15px 0 100px 10px;
 }
-.body__content .sidebar__scroll__left .body__content__sidebar__left .sidebar__privacy__security__term__conditions a, .body__content .sidebar__scroll__left .body__content__sidebar__left .sidebar__privacy__security__term__conditions span {
+.body__content__home .sidebar__scroll__left .body__content__sidebar__left .sidebar__privacy__security__term__conditions a, .body__content__home .sidebar__scroll__left .body__content__sidebar__left .sidebar__privacy__security__term__conditions span {
   color: rgb(140, 138, 138);
   text-decoration: none;
 }
-.body__content .sidebar__scroll__right {
+.body__content__home .sidebar__scroll__right {
   width: 100%;
   max-width: 360px;
   height: 100%;
 }
-.body__content .sidebar__scroll__right .body__content__sidebar__right {
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right {
   width: 100%;
   max-width: 360px;
   height: 100%;
@@ -317,55 +317,55 @@
   position: relative;
   right: 0;
 }
-.body__content .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__sponsor .sponsor__title {
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__sponsor .sponsor__title {
   height: 10%;
   padding: 20px 10px 10px 25px;
   font-size: 20px;
 }
-.body__content .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__sponsor .sponsor__content {
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__sponsor .sponsor__content {
   height: 80%;
 }
-.body__content .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__sponsor .sponsor__content .allsponsor {
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__sponsor .sponsor__content .allsponsor {
   padding: 10px 10px;
   display: flex;
   flex-direction: column;
 }
-.body__content .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__sponsor .sponsor__content .allsponsor a {
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__sponsor .sponsor__content .allsponsor a {
   text-decoration: none;
   display: flex;
   align-items: center;
   padding: 0;
 }
-.body__content .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__sponsor .sponsor__content .allsponsor a .sponsor__image {
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__sponsor .sponsor__content .allsponsor a .sponsor__image {
   width: 130px;
   height: 130px;
   border-radius: 10px;
 }
-.body__content .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__sponsor .sponsor__content .allsponsor a .sponsor__image img {
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__sponsor .sponsor__content .allsponsor a .sponsor__image img {
   border-radius: 10px;
   width: 100%;
   height: 100%;
 }
-.body__content .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__sponsor .sponsor__content .allsponsor a .sponsor__name {
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__sponsor .sponsor__content .allsponsor a .sponsor__name {
   width: 60%;
   padding: 10px;
   color: rgb(140, 138, 138);
 }
-.body__content .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__sponsor .sponsor__content .allsponsor a .sponsor__name .name {
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__sponsor .sponsor__content .allsponsor a .sponsor__name .name {
   color: black;
   font-size: 15px;
   font-weight: bold;
   letter-spacing: 2px;
 }
-.body__content .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__sponsor .sponsor__content .allsponsor a .sponsor__dots {
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__sponsor .sponsor__content .allsponsor a .sponsor__dots {
   display: none;
 }
-.body__content .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__sponsor .sponsor__content .allsponsor:hover {
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__sponsor .sponsor__content .allsponsor:hover {
   background-color: #e2e2e4;
   border-radius: 10px;
   position: relative;
 }
-.body__content .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__sponsor .sponsor__content .allsponsor:hover .sponsor__dots {
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__sponsor .sponsor__content .allsponsor:hover .sponsor__dots {
   display: block;
   border-radius: 50%;
   background-color: white;
@@ -373,7 +373,7 @@
   top: 5px;
   right: 20px;
 }
-.body__content .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__sponsor .sponsor__content .allsponsor:hover .sponsor__dots i {
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__sponsor .sponsor__content .allsponsor:hover .sponsor__dots i {
   font-size: 20px;
   padding: 10px;
 }/*# sourceMappingURL=home_style.css.map */
