@@ -309,13 +309,28 @@
   max-width: 360px;
   height: 100%;
 }
+.body__content__home .sidebar__scroll__right ::-webkit-scrollbar {
+  width: 8px;
+}
+.body__content__home .sidebar__scroll__right ::-webkit-scrollbar-thumb {
+  background-color: rgb(165, 165, 165);
+  border-radius: 10px;
+}
 .body__content__home .sidebar__scroll__right .body__content__sidebar__right {
   width: 100%;
-  max-width: 360px;
+  max-width: 380px;
   height: 100%;
   background-color: #f0f2f5;
   position: relative;
   right: 10px;
+  padding-bottom: 80px;
+  overflow: auto;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right:hover {
+  visibility: visible;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__sponsor {
+  width: 100%;
 }
 .body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__sponsor .sponsor__title {
   height: 10%;
@@ -377,15 +392,25 @@
   font-size: 20px;
   padding: 10px;
 }
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__friend_request {
+  width: 100%;
+}
 .body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__friend_request .friend_request__title {
   height: 10%;
   padding: 10px 10px 25px;
   font-size: 20px;
 }
 .body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__friend_request .friend_card {
-  height: 100px;
+  height: 120px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__friend_request .friend_card:hover {
+  background-color: rgb(213, 209, 209);
+  border-radius: 10px;
 }
 .body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__friend_request .friend_card .friend_card__img {
   width: 25%;
@@ -429,6 +454,8 @@
   position: absolute;
   right: 25%;
   top: 10px;
+  font-size: 13px;
+  color: grey;
 }
 .body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__friend_request .friend_card .firend_card__content .button {
   width: 100%;
@@ -456,4 +483,125 @@
   background-color: #d7d8db;
   text-align: center;
   font-size: 18px;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__birthday {
+  width: 100%;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__birthday .sidebar__right__birthday__title {
+  height: 10%;
+  padding: 10px 10px 25px;
+  font-size: 20px;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__birthday .sidebar__right__birthday__all_firends_birthday {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__birthday .sidebar__right__birthday__all_firends_birthday:hover {
+  background-color: rgb(213, 209, 209);
+  border-radius: 10px;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__birthday .sidebar__right__birthday__all_firends_birthday .all_firends_birthday__image img {
+  width: 36px;
+  height: 36px;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__contact {
+  width: 100%;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__contact .sidebar__right__contact__title {
+  height: 10%;
+  padding: 10px 10px 25px;
+  font-size: 20px;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__contact .allProfile {
+  max-width: 345px;
+  height: 50px;
+  padding: 30px 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__contact .allProfile .icon {
+  width: 15%;
+  position: relative;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__contact .allProfile .icon img {
+  width: 36px;
+  border-radius: 50%;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__contact .allProfile .icon .active_status {
+  position: absolute;
+  bottom: 2px;
+  right: 13px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 0;
+  background-color: rgb(42, 186, 47);
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__contact .allProfile i {
+  font-size: 30px;
+  padding: 5px;
+  background-color: #f0f2f5;
+  border-radius: 50%;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__contact .allProfile .name {
+  font-size: 15px;
+  font-weight: 500;
+  font: bold;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__contact .allProfile:hover {
+  background-color: rgb(213, 209, 209);
+  border-radius: 10px;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__group {
+  width: 100%;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__group .sidebar__right__group__title {
+  height: 10%;
+  padding: 10px 10px 25px;
+  font-size: 20px;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__group .allgroup {
+  max-width: 345px;
+  height: 50px;
+  padding: 30px 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__group .allgroup .icon {
+  width: 15%;
+  position: relative;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__group .allgroup .icon img {
+  width: 36px;
+  border-radius: 50%;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__group .allgroup .icon .active_status {
+  position: absolute;
+  bottom: 2px;
+  right: 13px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 0;
+  background-color: rgb(42, 186, 47);
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__group .allgroup i {
+  font-size: 30px;
+  padding: 5px;
+  background-color: #f0f2f5;
+  border-radius: 50%;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__group .allgroup .name {
+  font-size: 15px;
+  font-weight: 500;
+  font: bold;
+}
+.body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__group .allgroup:hover {
+  background-color: rgb(213, 209, 209);
+  border-radius: 10px;
 }/*# sourceMappingURL=home_style.css.map */

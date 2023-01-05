@@ -419,16 +419,37 @@
         width: 100%;
         max-width: 360px;
         height: 100%;
+
+        // create scrollbar
+        ::-webkit-scrollbar{
+            width: 8px;
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: rgb(165, 165, 165);
+            border-radius: 10px;
+        }
         
         .body__content__sidebar__right{
             width: 100%;
-            max-width: 360px;
+            max-width: 380px;
             height: 100%;
             background-color: #f0f2f5;
             position: relative;
             right: 10px;
+            padding-bottom: 80px;
+
+
+            // create scroll bar
+            overflow: auto;
+            &:hover{
+                visibility: visible;
+            }
             // sidebar sponsor
             .sidebar__right__sponsor{
+                width: 100%;
+
+                // padding: 15px 0 15px 10px;
+
                 .sponsor__title{
                     height: 10%;
                     padding: 20px 10px 10px 25px;
@@ -508,6 +529,9 @@
 
             // sidebar friend request
             .sidebar__right__friend_request{
+                width: 100%;
+                // padding: 15px 0 15px 10px;
+
                 .friend_request__title{
                     height: 10%;
                     padding: 10px 10px 25px;
@@ -517,13 +541,19 @@
 
                     }
                 }
+
                 .friend_card{
-                    height: 100px;
-                    
-                    
+                    height: 120px;
+                    padding: 10px;
                     display: flex;
-                    // align-items: center;
                     justify-content: space-between;
+                    align-items: center;
+
+                    cursor: pointer;
+                    &:hover{
+                        background-color: rgb(213, 209, 209);
+                        border-radius: 10px;
+                    }
 
                     .friend_card__img{
                         width: 25%;
@@ -542,6 +572,7 @@
                         position: relative;
                         .friend_name{
                             
+                            
                         }
                         .other_friends{
                             display: flex;
@@ -551,7 +582,6 @@
                                 
                                 img{
                                     position:absolute;
-
                                     height: 30px;
                                     width: 30px;
                                     border-radius: 50%;
@@ -578,10 +608,8 @@
                                 position:absolute;
                                 right: 25%;
                                 top: 10px;
-
-
-                                
-
+                                font-size: 13px;
+                                color: grey;
 
                             }
                         }
@@ -625,8 +653,171 @@
                     }
                     
                 }
-
             }
+            // birthday event
+            .sidebar__right__birthday{
+                width: 100%;
+                // padding: 15px 0 15px 10px;
+
+                // title
+                .sidebar__right__birthday__title{
+                    height: 10%;
+                    padding: 10px 10px 25px;
+                    font-size: 20px;
+
+                }
+                // content
+                .sidebar__right__birthday__all_firends_birthday{
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+                &:hover{
+                    background-color: rgb(213, 209, 209);
+                    border-radius: 10px;
+                }
+                .all_firends_birthday__image{
+                    img{
+                        width: 36px;
+                        height: 36px;
+                    }
+
+                }
+                .all_firends_birthday__name{
+
+                }
+                }
+            }
+
+            // contact
+            .sidebar__right__contact{
+
+                width: 100%;
+                // padding: 15px 0 15px 10px;
+
+                // title
+                .sidebar__right__contact__title{
+                    height: 10%;
+                    padding: 10px 10px 25px;
+                    font-size: 20px;
+
+                }
+
+                // all profile 
+                .allProfile{
+                    max-width: 345px;
+                    height: 50px;
+                    padding: 30px 10px;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    // all icons
+                    .icon{
+                        width: 15%;
+                        position: relative;
+                        img{
+                            width: 36px;
+                            border-radius: 50%;
+                        }
+                        .active_status{
+                            position: absolute;
+                            bottom: 2px;
+                            right: 13px;
+                            width: 11px;
+                            height: 11px;
+                            border-radius: 50%;
+                            border: 0;
+                            background-color: rgb(42, 186, 47);
+                        }
+                        
+                    }
+                    // see more icon
+                    i{
+                        font-size: 30px;
+                        padding: 5px;
+                        background-color: #f0f2f5;
+                        border-radius: 50%;
+                    }
+                    // icon name
+                    .name{
+                        font-size:15px;
+                        font-weight: 500;
+                        font:bold;
+                    }
+                    // hover on options
+                    &:hover{
+                    background-color: rgb(213, 209, 209);
+                    border-radius: 10px;
+                }
+
+                }
+                
+            }
+            // group
+            .sidebar__right__group{
+
+                width: 100%;
+                // padding: 15px 0 15px 10px;
+
+                // title
+                .sidebar__right__group__title{
+                    height: 10%;
+                    padding: 10px 10px 25px;
+                    font-size: 20px;
+
+                }
+                // all group 
+                .allgroup{
+                    max-width: 345px;
+                    height: 50px;
+                    padding: 30px 10px;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    // all icons
+                    .icon{
+                        width: 15%;
+                        position: relative;
+                        img{
+                            width: 36px;
+                            border-radius: 50%;
+                        }
+                        .active_status{
+                            position: absolute;
+                            bottom: 2px;
+                            right: 13px;
+                            width: 11px;
+                            height: 11px;
+                            border-radius: 50%;
+                            border: 0;
+                            background-color: rgb(42, 186, 47);
+                        }
+                        
+                    }
+                    // see more icon
+                    i{
+                        font-size: 30px;
+                        padding: 5px;
+                        background-color: #f0f2f5;
+                        border-radius: 50%;
+                    }
+                    // icon name
+                    .name{
+                        font-size:15px;
+                        font-weight: 500;
+                        font:bold;
+                    }
+                    // hover on options
+                    &:hover{
+                        background-color: rgb(213, 209, 209);
+                        border-radius: 10px;
+
+                    }
+                }
+                
+            }
+            
 
             
         }
