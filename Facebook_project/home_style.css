@@ -318,7 +318,6 @@
 }
 .body__content__home .sidebar__scroll__right .body__content__sidebar__right {
   width: 100%;
-  max-width: 380px;
   height: 100%;
   background-color: #f0f2f5;
   position: relative;
@@ -604,4 +603,141 @@
 .body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__group .allgroup:hover {
   background-color: rgb(213, 209, 209);
   border-radius: 10px;
+}
+.body__content__home .main__content {
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+}
+.body__content__home .main__content .main__content__container {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: relative;
+  right: 10%;
+  top: 0;
+  padding: 15px 0 80px 0;
+}
+.body__content__home .main__content .main__content__container .story_block {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.body__content__home .main__content .main__content__container .story_block .story_block__box1 {
+  border-radius: 10px;
+  position: relative;
+}
+.body__content__home .main__content .main__content__container .story_block .story_block__box1 .story__image {
+  height: 70%;
+  border-radius: 10px;
+}
+.body__content__home .main__content .main__content__container .story_block .story_block__box1 .story__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.body__content__home .main__content .main__content__container .story_block .story_block__box1 .story__title {
+  height: 30%;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  position: relative;
+  background-color: white;
+  border: 0;
+}
+.body__content__home .main__content .main__content__container .story_block .story_block__box1 .story__title p {
+  background-color: white;
+  position: absolute;
+  bottom: 10px;
+  right: 25px;
+}
+.body__content__home .main__content .main__content__container .story_block .story_block__box1 .story__plus_icon {
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+  position: absolute;
+  top: 55%;
+  right: 30px;
+}
+.body__content__home .main__content .main__content__container .story_block .story_block__box1 .story__plus_icon #story_plus_icon {
+  font-size: 20px;
+  font-weight: 800;
+  padding: 10px;
+  background-color: rgb(23, 37, 235);
+  color: white;
+  border-radius: 50%;
+}
+.body__content__home .main__content .main__content__container .story_block .bx_story {
+  height: 200px;
+  width: 19%;
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 0 0 2px black;
+  position: relative;
+}
+.body__content__home .main__content .main__content__container .story_block .bx_story .story__account__image {
+  height: 100%;
+  border-radius: 10px;
+}
+.body__content__home .main__content .main__content__container .story_block .bx_story .story__account__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.body__content__home .main__content .main__content__container .story_block .bx_story .story__account__title {
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  position: relative;
+  background-color: white;
+  border: 0;
+}
+.body__content__home .main__content .main__content__container .story_block .bx_story .story__account__title p {
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  right: 25px;
+}
+.body__content__home .main__content .main__content__container .story_block .bx_story .story__account__plus_icon {
+  top: 5px;
+  left: 10px;
+}
+.body__content__home .main__content .main__content__container .story_block .bx_story .story__account__plus_icon .allProfile {
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  padding: 2px;
+}
+.body__content__home .main__content .main__content__container .story_block .bx_story .story__account__plus_icon .allProfile .icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: rgb(63, 21, 231);
+  border-radius: 50%;
+}
+.body__content__home .main__content .main__content__container .story_block .bx_story .story__account__plus_icon .allProfile .icon img {
+  width: 36px;
+  border-radius: 50%;
+}
+.body__content__home .main__content .main__content__container .story_block .bx_story .story__account__plus_icon .allProfile .icon .active_status {
+  position: absolute;
+  top: 30px;
+  right: 5px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 0;
+  background-color: rgb(42, 186, 47);
+}
+.body__content__home .main__content .main__content__container .story_block .bx_story .story__account__plus_icon .allProfile i {
+  font-size: 30px;
+  padding: 5px;
+  background-color: #f0f2f5;
+  border-radius: 50%;
 }/*# sourceMappingURL=home_style.css.map */
