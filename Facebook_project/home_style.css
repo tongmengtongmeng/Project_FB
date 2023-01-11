@@ -190,6 +190,7 @@
   align-items: center;
   position: fixed;
   left: 0;
+  background-color: #f0f2f5;
 }
 .body__content__home .sidebar__scroll__left {
   width: 30%;
@@ -598,7 +599,6 @@
 .body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__group .allgroup .name {
   font-size: 15px;
   font-weight: 500;
-  font: bold;
 }
 .body__content__home .sidebar__scroll__right .body__content__sidebar__right .sidebar__right__group .allgroup:hover {
   background-color: rgb(213, 209, 209);
@@ -612,7 +612,6 @@
 .body__content__home .main__content .main__content__container {
   width: 100%;
   height: 100%;
-  background-color: white;
   position: relative;
   right: 10%;
   top: 0;
@@ -621,12 +620,11 @@
 .body__content__home .main__content .main__content__container .story_block {
   width: 100%;
   height: 200px;
-  position: absolute;
-  background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 .body__content__home .main__content .main__content__container .story_block .story_block__box1 {
   border-radius: 10px;
@@ -740,4 +738,84 @@
   padding: 5px;
   background-color: #f0f2f5;
   border-radius: 50%;
+}
+.body__content__home .main__content .main__content__container .createPost {
+  width: 100%;
+  max-width: 600px;
+  height: 120px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.body__content__home .main__content .main__content__container .createPost .creatPost__container {
+  border-radius: 10px;
+  padding: 10px;
+}
+.body__content__home .main__content .main__content__container .createPost .creatPost__container .container__top {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.body__content__home .main__content .main__content__container .createPost .creatPost__container .container__top .createPost__container--profile .icon {
+  width: 15%;
+  position: relative;
+  cursor: pointer;
+}
+.body__content__home .main__content .main__content__container .createPost .creatPost__container .container__top .createPost__container--profile .icon img {
+  width: 36px;
+  border-radius: 50%;
+}
+.body__content__home .main__content .main__content__container .createPost .creatPost__container .container__top .createPost__container--search .header_searh_box {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body__content__home .main__content .main__content__container .createPost .creatPost__container .container__top .createPost__container--search .header_searh_box i {
+  position: absolute;
+  z-index: 2;
+  left: 3px;
+  font-size: 25px;
+  color: gray;
+}
+.body__content__home .main__content .main__content__container .createPost .creatPost__container .container__top .createPost__container--search .header_searh_box input {
+  z-index: 1;
+  width: 540px;
+  height: 40px;
+  background-color: #f0f2f5;
+  color: gray;
+  font-size: 15px;
+  outline: none;
+  padding-left: 30px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+.body__content__home .main__content .main__content__container .createPost .creatPost__container .contianer__bottom {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.body__content__home .main__content .main__content__container .createPost .creatPost__container .contianer__bottom .createPost__container--live {
+  padding: 10px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.body__content__home .main__content .main__content__container .createPost .creatPost__container .contianer__bottom .createPost__container--photoVideo {
+  padding: 10px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.body__content__home .main__content .main__content__container .createPost .creatPost__container .contianer__bottom .createPost__container--feelingActive {
+  padding: 10px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.body__content__home .main__content .main__content__container .createPost .creatPost__container .contianer__bottom :hover {
+  background-color: #f0f2f5;
 }/*# sourceMappingURL=home_style.css.map */
