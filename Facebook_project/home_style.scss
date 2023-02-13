@@ -837,6 +837,8 @@
             right: 10%;
             top: 0;
             padding: 15px 0 80px 0;
+            overflow-y: auto;
+            // add story
             .story_block{
                 width: 100%;
                 height: 200px;
@@ -997,12 +999,14 @@
                     }
                 }
             } 
+            // create post
             .createPost{
                 width: 100%;
                 max-width: 600px;
                 height: 120px;
                 background-color: white;
                 border-radius: 10px;
+                box-shadow: 0 .5px 3px gray ;
 
                 margin-bottom: 10px;
 
@@ -1010,11 +1014,13 @@
                     
                     border-radius: 10px;
                     padding: 10px;
+                    // account and search bar
                     .container__top{
                         height: 50px;
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
+                        // account
                         .createPost__container--profile{
 
                             .icon{
@@ -1030,6 +1036,7 @@
                             }
 
                         }
+                        // search bar
                         .createPost__container--search{
                             .header_searh_box{
                                 width: 100%;
@@ -1066,6 +1073,7 @@
 
                         }
                     }
+                    // menu of post
                     .contianer__bottom{
                         width: 100%;
                         height: 70px;
@@ -1073,12 +1081,14 @@
                         justify-content: space-evenly;
                         align-items: center;
                         padding-bottom: 10px;
+                        // live option
                         .createPost__container--live{
                             padding: 10px 50px;
                             border-radius: 5px;
                             cursor: pointer;
 
                         }
+                        // photo and video option
                         .createPost__container--photoVideo{
                             padding: 10px 50px;
                             border-radius: 5px;
@@ -1086,11 +1096,13 @@
 
 
                         }
+                        // statuis option
                         .createPost__container--feelingActive{
                             padding: 10px 50px;
                             border-radius: 5px;
                             cursor: pointer;
                         }
+                        // hover
                         :hover{
                             background-color: #f0f2f5;
 
@@ -1102,6 +1114,76 @@
                 }
 
             }
+            // create room
+            .createRoom{
+                width: 100%;
+                max-width: 600px;
+                height: 50px;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 .5px 3px gray ;
+                margin-bottom: 10px;
+                // container
+                .createRoom_container{
+                    border-radius: 10px;
+                    padding: 5px 10px;
+                    // content
+                    .createRoom_container__content{
+                        display: flex;
+                        align-items: center;
+                        width: 150px;
+                        height: 40px;
+                        border: 2px solid rgb(222, 242, 248);
+                        border-radius: 50px;
+                        padding: 5px 10px;
+                        // hover
+                        &:hover{
+                            background-color: #f0f2f5;
+                            cursor: pointer;
+                        }
+                        // icon
+                        .createRoom__content--icon{
+                            .fa-video-camera{
+                                font-size: 20px;
+                                color: blue;
+                                padding-right: 5px;
+
+                            }
+                        }
+                        // title
+                        .createRoom__content--title{
+                            span{
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+
+            // post card
+            .postCard{
+                width: 100%;
+                max-width: 600px;
+                height: 800px;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 .5px 3px gray ;
+                margin-bottom: 10px;
+                z-index: 1;
+                .postCard_container{
+                    .postCard_container_content{
+                        .postCard_content__account{
+
+                        }
+                        .postCard_content__page{
+
+                        }
+                    }
+                }
+            }
+            
+
         }
         
     }

@@ -8,7 +8,6 @@
   max-width: 100%;
   background-color: white;
   box-shadow: 0 0 8px gray;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -616,6 +615,7 @@
   right: 10%;
   top: 0;
   padding: 15px 0 80px 0;
+  overflow-y: auto;
 }
 .body__content__home .main__content .main__content__container .story_block {
   width: 100%;
@@ -745,6 +745,7 @@
   height: 120px;
   background-color: white;
   border-radius: 10px;
+  box-shadow: 0 0.5px 3px gray;
   margin-bottom: 10px;
 }
 .body__content__home .main__content .main__content__container .createPost .creatPost__container {
@@ -818,4 +819,48 @@
 }
 .body__content__home .main__content .main__content__container .createPost .creatPost__container .contianer__bottom :hover {
   background-color: #f0f2f5;
+}
+.body__content__home .main__content .main__content__container .createRoom {
+  width: 100%;
+  max-width: 600px;
+  height: 50px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0.5px 3px gray;
+  margin-bottom: 10px;
+}
+.body__content__home .main__content .main__content__container .createRoom .createRoom_container {
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.body__content__home .main__content .main__content__container .createRoom .createRoom_container .createRoom_container__content {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  height: 40px;
+  border: 2px solid rgb(222, 242, 248);
+  border-radius: 50px;
+  padding: 5px 10px;
+}
+.body__content__home .main__content .main__content__container .createRoom .createRoom_container .createRoom_container__content:hover {
+  background-color: #f0f2f5;
+  cursor: pointer;
+}
+.body__content__home .main__content .main__content__container .createRoom .createRoom_container .createRoom_container__content .createRoom__content--icon .fa-video-camera {
+  font-size: 20px;
+  color: blue;
+  padding-right: 5px;
+}
+.body__content__home .main__content .main__content__container .createRoom .createRoom_container .createRoom_container__content .createRoom__content--title span {
+  font-weight: 700;
+}
+.body__content__home .main__content .main__content__container .postCard {
+  width: 100%;
+  max-width: 600px;
+  height: 800px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0.5px 3px gray;
+  margin-bottom: 10px;
+  z-index: 1;
 }/*# sourceMappingURL=home_style.css.map */
