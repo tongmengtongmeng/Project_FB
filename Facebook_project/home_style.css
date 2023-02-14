@@ -190,11 +190,15 @@
   position: fixed;
   left: 0;
   background-color: #f0f2f5;
+  overflow-y: auto;
 }
 .body__content__home .sidebar__scroll__left {
   width: 30%;
   height: 100%;
   visibility: hidden;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 .body__content__home .sidebar__scroll__left ::-webkit-scrollbar {
   width: 8px;
@@ -306,8 +310,11 @@
 }
 .body__content__home .sidebar__scroll__right {
   width: 100%;
-  max-width: 360px;
+  max-width: 350px;
   height: 100%;
+  position: sticky;
+  top: 0;
+  right: 0;
 }
 .body__content__home .sidebar__scroll__right ::-webkit-scrollbar {
   width: 8px;
@@ -317,13 +324,13 @@
   border-radius: 10px;
 }
 .body__content__home .sidebar__scroll__right .body__content__sidebar__right {
-  width: 100%;
+  width: 350px;
   height: 100%;
   background-color: #f0f2f5;
   position: relative;
-  right: 10px;
+  right: 0px;
   padding-bottom: 80px;
-  overflow: auto;
+  overflow-Y: auto;
 }
 .body__content__home .sidebar__scroll__right .body__content__sidebar__right:hover {
   visibility: visible;
@@ -615,7 +622,6 @@
   right: 10%;
   top: 0;
   padding: 15px 0 80px 0;
-  overflow-y: auto;
 }
 .body__content__home .main__content .main__content__container .story_block {
   width: 100%;
@@ -857,10 +863,133 @@
 .body__content__home .main__content .main__content__container .postCard {
   width: 100%;
   max-width: 600px;
+  z-index: 1;
+}
+.body__content__home .main__content .main__content__container .postCard .postCard_container .postCard_container_content .postCard_content__page {
   height: 800px;
+  margin-bottom: 20px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 0.5px 3px gray;
+  padding: 20px 5px;
+}
+.body__content__home .main__content .main__content__container .postCard .postCard_container .postCard_container_content .postCard_content__page .postCard_content__page--header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
   margin-bottom: 10px;
-  z-index: 1;
+}
+.body__content__home .main__content .main__content__container .postCard .postCard_container .postCard_container_content .postCard_content__page .postCard_content__page--header .postCard_content__page--header__account {
+  display: grid;
+  grid-template-columns: 55px 200px;
+  grid-template-rows: 30px 20px;
+  grid-template-areas: "a1 a2" "a1 a3";
+}
+.body__content__home .main__content .main__content__container .postCard .postCard_container .postCard_container_content .postCard_content__page .postCard_content__page--header .postCard_content__page--header__account .postCard_content__page--header__account--profile {
+  grid-area: a1;
+  cursor: pointer;
+}
+.body__content__home .main__content .main__content__container .postCard .postCard_container .postCard_container_content .postCard_content__page .postCard_content__page--header .postCard_content__page--header__account .postCard_content__page--header__account--profile img {
+  width: 50px;
+  height: 50px;
+}
+.body__content__home .main__content .main__content__container .postCard .postCard_container .postCard_container_content .postCard_content__page .postCard_content__page--header .postCard_content__page--header__account .postCard_content__page--header__account--name {
+  grid-area: a2;
+}
+.body__content__home .main__content .main__content__container .postCard .postCard_container .postCard_container_content .postCard_content__page .postCard_content__page--header .postCard_content__page--header__account .postCard_content__page--header__account--name a {
+  text-decoration: none;
+  color: black;
+}
+.body__content__home .main__content .main__content__container .postCard .postCard_container .postCard_container_content .postCard_content__page .postCard_content__page--header .postCard_content__page--header__account .postCard_content__page--header__account--name a span {
+  font-size: 20px;
+  font-weight: 700;
+}
+.body__content__home .main__content .main__content__container .postCard .postCard_container .postCard_container_content .postCard_content__page .postCard_content__page--header .postCard_content__page--header__account .postCard_content__page--header__account--active {
+  grid-area: a3;
+}
+.body__content__home .main__content .main__content__container .postCard .postCard_container .postCard_container_content .postCard_content__page .postCard_content__page--header .postCard_content__page--header__account .postCard_content__page--header__account--active span {
+  font-size: 13px;
+  color: grey;
+}
+.body__content__home .main__content .main__content__container .postCard .postCard_container .postCard_container_content .postCard_content__page .postCard_content__page--header .postCard_content__page--header__option {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80px;
+}
+.body__content__home .main__content .main__content__container .postCard .postCard_container .postCard_container_content .postCard_content__page .postCard_content__page--header .postCard_content__page--header__option .postCard_content__page--header__option--menu {
+  padding: 10px;
+}
+.body__content__home .main__content .main__content__container .postCard .postCard_container .postCard_container_content .postCard_content__page .postCard_content__page--header .postCard_content__page--header__option .postCard_content__page--header__option--menu .bx-dots-horizontal-rounded {
+  font-size: 20px;
+}
+.body__content__home .main__content .main__content__container .postCard .postCard_container .postCard_container_content .postCard_content__page .postCard_content__page--header .postCard_content__page--header__option .postCard_content__page--header__option--menu:hover {
+  background-color: #f0f2f5;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.body__content__home .main__content .main__content__container .postCard .postCard_container .postCard_container_content .postCard_content__page .postCard_content__page--header .postCard_content__page--header__option .postCard_content__page--header__option--cancel {
+  padding: 12px 15px;
+}
+.body__content__home .main__content .main__content__container .postCard .postCard_container .postCard_container_content .postCard_content__page .postCard_content__page--header .postCard_content__page--header__option .postCard_content__page--header__option--cancel .fa-x {
+  font-size: 15px;
+}
+.body__content__home .main__content .main__content__container .postCard .postCard_container .postCard_container_content .postCard_content__page .postCard_content__page--header .postCard_content__page--header__option .postCard_content__page--header__option--cancel:hover {
+  background-color: #f0f2f5;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.body__content__home .main__content .main__content__container .postCard .postCard_container .postCard_container_content .postCard_content__page .postCard_content__page--caption {
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+.body__content__home .main__content .main__content__container .postCard .postCard_container .postCard_container_content .postCard_content__page .postCard_content__page--caption p {
+  font-size: 18px;
+}
+.body__content__home .main__content .main__content__container .postCard .postCard_container .postCard_container_content .postCard_content__page .postCard_content__page--image {
+  height: 400px;
+  background-color: red;
+  display: grid;
+  grid-template-columns: 385px 200px;
+  grid-template-rows: 190px 200px;
+  grid-template-areas: "b1 b2" "b1 b3";
+  gap: 5px;
+  margin-bottom: 20px;
+}
+.body__content__home .main__content .main__content__container .postCard .postCard_container .postCard_container_content .postCard_content__page .postCard_content__page--image .img1 {
+  grid-area: b1;
+}
+.body__content__home .main__content .main__content__container .postCard .postCard_container .postCard_container_content .postCard_content__page .postCard_content__page--image .img1 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.body__content__home .main__content .main__content__container .postCard .postCard_container .postCard_container_content .postCard_content__page .postCard_content__page--image .img2 {
+  grid-area: b2;
+}
+.body__content__home .main__content .main__content__container .postCard .postCard_container .postCard_container_content .postCard_content__page .postCard_content__page--image .img2 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.body__content__home .main__content .main__content__container .postCard .postCard_container .postCard_container_content .postCard_content__page .postCard_content__page--image .img3 {
+  grid-area: b3;
+}
+.body__content__home .main__content .main__content__container .postCard .postCard_container .postCard_container_content .postCard_content__page .postCard_content__page--image .img3 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.body__content__home .main__content .main__content__container .postCard .postCard_container .postCard_container_content .postCard_content__account {
+  height: 100px;
+  width: 600px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0.5px 3px gray;
 }/*# sourceMappingURL=home_style.css.map */

@@ -258,12 +258,16 @@
     background-color: #f0f2f5;
 
 
+    overflow-y: auto;
     
     // sidebar left
     .sidebar__scroll__left{
         width: 30%;
         height: 100%;
         visibility: hidden;
+        position: sticky;
+        top: 0;
+        left: 0;
 
         // create scroll bar
         ::-webkit-scrollbar{
@@ -420,8 +424,11 @@
     // sidebar right
     .sidebar__scroll__right{
         width: 100%;
-        max-width: 360px;
+        max-width: 350px;
         height: 100%;
+        position: sticky;
+        top: 0;
+        right: 0;
 
         // create scrollbar
         ::-webkit-scrollbar{
@@ -433,17 +440,17 @@
         }
         
         .body__content__sidebar__right{
-            width: 100%;
+            width: 350px;
 
             height: 100%;
             background-color: #f0f2f5;
             position: relative;
-            right: 10px;
+            right: 0px;
             padding-bottom: 80px;
 
 
             // create scroll bar
-            overflow: auto;
+            overflow-Y: auto;
             &:hover{
                 visibility: visible;
             }
@@ -837,7 +844,6 @@
             right: 10%;
             top: 0;
             padding: 15px 0 80px 0;
-            overflow-y: auto;
             // add story
             .story_block{
                 width: 100%;
@@ -1165,20 +1171,174 @@
             .postCard{
                 width: 100%;
                 max-width: 600px;
-                height: 800px;
-                background-color: white;
-                border-radius: 10px;
-                box-shadow: 0 .5px 3px gray ;
-                margin-bottom: 10px;
+                
                 z-index: 1;
+                // container
                 .postCard_container{
+                    // content
                     .postCard_container_content{
-                        .postCard_content__account{
-
-                        }
+                        // page
                         .postCard_content__page{
+                            height: 800px;
+                            margin-bottom: 20px;
+                            background-color: white;
+                            border-radius: 10px;
+                            box-shadow: 0 .5px 3px gray ;
+                            padding: 20px 5px;
+                            // page header
+                            .postCard_content__page--header{
+                                height: 50px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                padding: 0 15px;
+                                margin-bottom: 10px;
+                                
+                                // account block
+                                .postCard_content__page--header__account{
+                                    display: grid;
+                                    grid-template-columns: 55px 200px;
+                                    grid-template-rows: 30px 20px;
+                                    grid-template-areas: 'a1 a2' 'a1 a3';
+                                    
+                                    // profile
+                                    .postCard_content__page--header__account--profile{
+                                        grid-area: a1;
+                                        cursor: pointer;
+                                        img{
+                                            width: 50px;
+                                            height: 50px;
+                                        }
+                                        
+
+                                    }
+                                    // page name
+                                    .postCard_content__page--header__account--name{
+                                        grid-area: a2;
+                                        a{
+                                            text-decoration: none;
+                                            color: black;
+                                            span{
+                                                font-size: 20px;
+                                                font-weight: 700;
+                                            }
+                                        }
+                                        
+                                    }
+                                    // page active
+                                    .postCard_content__page--header__account--active{
+                                        grid-area: a3;
+                                        
+                                        span{
+                                            font-size: 13px;
+                                            color: grey;
+                                        }
+                                    }
+                                }
+                                
+                                // option
+                                .postCard_content__page--header__option{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-evenly;
+                                    width: 80px;
+                                    // menu icon
+                                    .postCard_content__page--header__option--menu{
+                                        padding: 10px;
+
+                                        .bx-dots-horizontal-rounded{
+                                            font-size: 20px;
+                                        }
+                                        &:hover{
+                                            
+                                            background-color: #f0f2f5;
+                                            cursor: pointer;
+                                            border-radius: 50%;
+                                        }
+
+                                    }
+                                    // cacel buttton
+                                    .postCard_content__page--header__option--cancel{
+                                        padding: 12px 15px;
+
+                                        .fa-x{
+                                            font-size: 15px;
+                                        }
+                                        &:hover{
+                                
+                                            
+                                            background-color: #f0f2f5;
+                                            cursor: pointer;
+                                            border-radius: 50%;
+    
+    
+    
+                                        }
+                                    }
+                                    
+                                }
+                            }
+                            // page caption
+                            .postCard_content__page--caption{
+                                padding: 0 15px;
+                                margin-bottom: 20px;
+                                p{
+                                    font-size: 18px;
+                                }
+                            }
+                            // page image
+                            .postCard_content__page--image{
+                                height: 400px;
+                                background-color: red;
+                                display: grid;
+                                grid-template-columns: 385px 200px;
+                                grid-template-rows: 190px 200px;
+                                grid-template-areas: 'b1 b2' 'b1 b3';
+                                gap: 5px;
+                                margin-bottom: 20px;
+                                .img1{
+                                    grid-area: b1;
+                                    img{
+                                        width:100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                    }
+
+                                }
+                                .img2{
+                                    grid-area: b2;
+
+                                    img{
+                                        width:100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                    }
+
+                                }
+                                .img3{
+                                    grid-area: b3;
+
+                                    img{
+                                        width:100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                    }
+
+                                }
+                            }
 
                         }
+                        // account
+                        .postCard_content__account{
+                            height: 100px;
+                            width: 600px;
+                            margin-bottom: 20px;
+                            background-color: white;
+                            border-radius: 10px;
+                            box-shadow: 0 .5px 3px gray ;
+
+                        }
+                        
                     }
                 }
             }
